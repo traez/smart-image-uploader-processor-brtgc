@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Myxellia Figma take home test
 
-## Getting Started
+Myxellia Front End Engineer Figma take home assessment test
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The Challenge/User Stories
+
+This project is a technical assessment designed to test the ability to translate a provided Figma design
+ into a fully functional web application. The goal is to accurately implement the UI while meeting core requirements such as responsiveness, clean code structure, and deployment.
+
+Candidates are expected to submit a live deployment (Vercel), provide access to the GitHub repository for code review, and share their resume or portfolio. Successful completion of this challenge, with a focus on code quality and attention to design details, will result in feedback and a strong chance of an offer (90% if requirements are met).
+
+### Screenshot
+
+![](/public/screenshot-desktop.png)
+
+### Links
+
+- Solution URL: [https://github.com/traez/myxellia-figma](https://github.com/traez/myxellia-figma)
+- Live Site URL: [https://myxellia-figma.vercel.app/](https://myxellia-figma.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox and CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- Typescript
+- Nodejs
+- Tailwind CSS
+- ShadCN  
+- @radix-ui  
+- class-variance-authority  
+- clsx  
+- lucide-react  
+- tailwind-merge    
+- react-icons     
+- chart.js     
+- react-chartjs-2     
+
+### What I learned
+
+**1 Styling shadcn/ui Dialog Close Button**  
+## 
+
+```typescriptreact
+<DialogContent className="[&>button]:text-white">
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Key Learning:** This CSS selector `[&>button]:text-white` means "apply `text-white` to any direct `<button>` child inside `DialogContent`," which includes the default close X button.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Why this works:** This technique works across all shadcn/ui components (Sheet, Dialog, Popover, etc.) because they are built on Radix Primitives, which render actual DOM elements under the hood. The `&` represents the parent element (DialogContent), and `>button` targets direct button children.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Use cases:** Apply this pattern whenever you need to style default buttons or icons within shadcn/ui overlay components without creating custom components.
 
-## Learn More
+### Continued development
 
-To learn more about Next.js, take a look at the following resources:
+- More projects; increased competence!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Useful resources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Stackoverflow  
+YouTube  
+Google  
+ChatGPT
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Website - [Zeeofor Technologies](https://zeeofor.tech)
+- Twitter - [@trae_z](https://twitter.com/trae_z)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+
+-Jehovah that keeps breath in my lungs

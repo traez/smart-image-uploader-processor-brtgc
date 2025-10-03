@@ -5,7 +5,7 @@ import NextJsTopLoader from "@/lib/NextJsTopLoader";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Smart Image Uploader Processor BRTGC",
+  title: "Turso SQLite Cloudinary Sandbox App - BRTGC",
   description: "Created by Trae Zeeofor",
 };
 

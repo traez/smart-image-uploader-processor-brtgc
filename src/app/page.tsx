@@ -10,7 +10,7 @@ export default async function Home() {
   return (
     <div className="bg-gray-50 p-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Smart Image Uploader</h1>
+        <h1 className="text-3xl font-bold mb-6">Cloudinary Image Submission</h1>
         <SubmissionForm />
         <SubmissionsList submissions={submissions} />
       </div>

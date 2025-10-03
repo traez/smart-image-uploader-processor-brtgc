@@ -15,9 +15,8 @@ export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "Sample", href: "/sample" },
-    { label: "Spare", href: "/" },
+    { label: "ImageSubmission", href: "/" },
+    { label: "UserList", href: "/user" },
   ];
 
   return (
@@ -29,7 +28,7 @@ export default function Header() {
             href="/"
             className="text-[20px] sm:text-2xl font-semibold whitespace-nowrap hover:text-blue-600 transition-colors"
           >
-            Smart Image Processor BRTGC
+            Turso SQLite Cloudinary
           </Link>
 
           {/* Mobile Menu Button - Using Sheet */}
@@ -60,7 +59,7 @@ export default function Header() {
                     onClick={() => setIsModalOpen(false)}
                     className="text-[20px] sm:text-2xl font-semibold whitespace-nowrap hover:text-blue-600 transition-colors"
                   >
-                    Smart Image Processor BRTGC
+                    Turso SQLite Cloudinary
                   </Link>
                   <Button
                     variant="ghost"

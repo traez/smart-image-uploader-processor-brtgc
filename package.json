@@ -1,5 +1,5 @@
 {
-  "name": "smart-image-uploader-processor-brtgc",
+  "name": "turso-sqlite-cloudinary",
   "version": "0.1.0",
   "private": true,
   "scripts": {

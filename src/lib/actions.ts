@@ -29,7 +29,7 @@ export async function createUser(formData: FormData) {
       args: [name, email],
     });
 
-    revalidatePath("/sample");
+    revalidatePath("/user");
     return { success: true };
   } catch (error) {
     console.error("Error creating user:", error);
@@ -44,7 +44,7 @@ export async function deleteUser(userId: number) {
       args: [userId],
     });
 
-    revalidatePath("/sample");
+    revalidatePath("/user");
     return { success: true };
   } catch (error) {
     console.error("Error deleting user:", error);

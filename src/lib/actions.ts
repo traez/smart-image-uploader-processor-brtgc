@@ -1,3 +1,4 @@
+//src\lib\actions.ts
 "use server";
 import { turso } from "@/lib/turso";
 import type { User } from "@/lib/types";
@@ -28,7 +29,7 @@ export async function createUser(formData: FormData) {
       args: [name, email],
     });
 
-    revalidatePath("/");
+    revalidatePath("/sample");
     return { success: true };
   } catch (error) {
     console.error("Error creating user:", error);
@@ -43,7 +44,7 @@ export async function deleteUser(userId: number) {
       args: [userId],
     });
 
-    revalidatePath("/");
+    revalidatePath("/sample");
     return { success: true };
   } catch (error) {
     console.error("Error deleting user:", error);
